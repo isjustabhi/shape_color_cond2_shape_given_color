@@ -1,6 +1,4 @@
-Here’s a **clean, concise README.md** version that includes only the essential details for GitHub:
 
----
 
 # Conditional Generative Model: P(color) × P(shape | color)
 
@@ -8,7 +6,7 @@ This project implements an **improved conditional generative model** for generat
 
 ---
 
-## ✅ Objective
+## Objective
 
 $$
 P(\text{shape}, \text{color}) \approx P(\text{color}) \times P(\text{shape} \mid \text{color})
@@ -20,7 +18,7 @@ $$
 
 ---
 
-## ✅ Features
+## Features
 
 * **FiLM Layers** for strong color-based conditioning
 * **Beta-VAE Loss** for disentangled latent space
@@ -29,7 +27,7 @@ $$
 
 ---
 
-## ✅ Quick Start
+##  Quick Start
 
 ### 1. Clone and Install
 
@@ -62,7 +60,7 @@ jupyter notebook scripts/view_results.ipynb
 
 ---
 
-## ✅ Results (Example)
+## Results (Example)
 
 | Epoch | Generated Samples                                          |
 | ----- | ---------------------------------------------------------- |
@@ -70,40 +68,3 @@ jupyter notebook scripts/view_results.ipynb
 | 150   | ![Epoch150](samples/cond2_improved/generated_epoch150.png) |
 
 ---
-
-## ✅ Requirements
-
-```
-torch>=2.0.0
-torchvision>=0.15.0
-pillow
-matplotlib
-numpy
-jupyter
-```
-
----
-
-## ✅ License
-
-MIT License © 2025 Abhiram Varma Nandimandalam
-
-```
-
----
-
-✅ This version is **short, professional, and GitHub-friendly**. It includes:
-- Goal
-- Key features
-- Quick commands for setup
-- Results preview
-- Requirements
-
----
-
-Do you want me to now **generate the `view_results.ipynb` notebook** that will:
-✔ Plot **loss curve**  
-✔ Show **latest generated image**  
-✔ Show **real dataset examples**  
-✔ Combine all generated epochs into a progression grid?
-```
