@@ -31,17 +31,33 @@ This work is part of a comparative study inspired by the paper **"Compositional 
 ## ✅ **Project Structure**
 
 shape_color_cond2_shape_given_color/
+├── data/
+│   └── toy_dataset/
+│       ├── train/                      # Synthetic training images (colored shapes)
+│       └── test/                       # Synthetic test images
+│
+├── models/
+│   └── cond_shape_given_color_improved.pth  # Saved model + loss history
+│
+├── samples/
+│   └── cond2_improved/
+│       ├── generated_epoch5.png
+│       ├── generated_epoch10.png
+│       ├── ...
+│       └── generated_epoch150.png      # Generated samples (Red | Green | Blue)
+│
 ├── scripts/
-│ ├── train_shape_given_color_improved.py # Training script
-│ ├── view_results.ipynb # Visualization (loss + samples)
-│ ├── generate_dataset.py # Synthetic dataset generator
-├── shape_dataset.py # Dataset loader
-├── shape_generator_improved.py # Improved Conditional VAE with FiLM
-├── samples/cond2_improved/ # Generated samples (every few epochs)
-├── models/cond_shape_given_color_improved.pth # Model checkpoint with loss history
-├── requirements.txt
-├── README.md
-└── .gitignore
+│   ├── generate_dataset.py             # Creates synthetic dataset
+│   ├── train_shape_given_color_improved.py # Training script with FiLM + Beta-VAE
+│   └── view_results.ipynb              # Visualization notebook (loss curve + images)
+│
+├── shape_dataset.py                    # Dataset loader for grayscale + color condition
+├── shape_generator_improved.py         # Improved Conditional VAE (FiLM + U-Net-like)
+│
+├── requirements.txt                    # Dependencies
+├── README.md                           # Full project description, results, usage
+└── .gitignore                          # Ignores models, data, cache, etc.
+
 ---
 
 ---
