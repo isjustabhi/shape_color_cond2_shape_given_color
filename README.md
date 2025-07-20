@@ -61,10 +61,10 @@ jupyter notebook scripts/view_results.ipynb
 ---
 
 ## Results (Example)
-
 | Epoch | Generated Samples                                          |
 | ----- | ---------------------------------------------------------- |
 | 10    | ![Epoch10](samples/cond2_improved/generated_epoch10.png)   |
+| 135   | ![Epoch135](samples/cond2_improved/generated_epoch135.png) |
 | 150   | ![Epoch150](samples/cond2_improved/generated_epoch150.png) |
 
 ---
